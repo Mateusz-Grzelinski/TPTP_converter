@@ -37,7 +37,7 @@ if __name__ == '__main__':
     from pprint import pprint
 
     lexer = get_TPTP_lexer()
-    with open('examples/cnf_trivial.p', 'r') as source:
+    with open('examples/cnf_predicates.p', 'r') as source:
         tokens = lexer.lex(source.read())
 
         pprint(list(tokens))
