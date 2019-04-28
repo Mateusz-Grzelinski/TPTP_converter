@@ -4,8 +4,20 @@ TPTP and dimacs are syntax for describing SAT problems
 
 This project converts TPTP syntax to dimacs when it is possible
 
+
+## Online resources
+
 TPTP BNF: http://www.tptp.org/TPTP/SyntaxBNF.html
+
+TPTP quick start (not very useful): http://www.tptp.org/TPTP/QuickGuide/
+
+TPTP detail description (technical document): http://www.tptp.org/TPTP/TR/TPTPTR.shtml
+
+I haven't found any tutorial for TPTP syntax.
+
 Dimacs syntax: http://www.domagoj-babic.com/uploads/ResearchProjects/Spear/dimacs-cnf.pdf
+
+Dimacs tutorial: https://fairmut3x.wordpress.com/2011/07/29/cnf-conjunctive-normal-form-dimacs-format-explained/
 
 ## Dependencies
 
