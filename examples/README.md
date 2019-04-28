@@ -2,11 +2,13 @@
 
 Dimacs files were created with TPTP4x utility
 
-## Simple
+## cnf
 
-Dead simple, convertable examples
+Examples with TPTP cnf syntax
 
-## TPTP_library 
+### cnf/TPTP-library 
+
+Selected examples from TPTP library
 
 SYN000-1.p is has a lot of TPTP syntax features, good for testing lexer, can not be converted to dimacs
 
