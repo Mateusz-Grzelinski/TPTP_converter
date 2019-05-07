@@ -1,0 +1,32 @@
+<html><head>
+<title>main.py</title>
+<meta name="Generator" content="htmlizer/[Twisted, version 18.7.0]" />
+<link rel="alternate" href="main.py" type="text/x-python" />
+
+</head>
+<body>
+<pre><span class="py-src-variable">import</span> <span class="py-src-variable">argparse</span>
+<span class="py-src-variable">from</span> <span class="py-src-variable">pprint</span> <span class="py-src-variable">import</span> <span class="py-src-variable">pprint</span>
+<span class="py-src-variable">from</span> <span class="py-src-variable">src</span>.<span class="py-src-variable">tptp_lexer</span> <span class="py-src-variable">import</span> <span class="py-src-variable">get_TPTP_lexer</span>
+
+<span class="py-src-variable">if</span> <span class="py-src-variable">__name__</span> == <span class="py-src-string">&#x27;__main__&#x27;</span>:
+    <span class="py-src-variable">parser</span> = <span class="py-src-variable">argparse</span>.<span class="py-src-variable">ArgumentParser</span>(<span class="py-src-variable">description</span>=<span class="py-src-string">&#x27;TPTP to dimacs converter&#x27;</span>)
+    <span class="py-src-variable">parser</span>.<span class="py-src-variable">add_argument</span>(<span class="py-src-string">&#x27;TPTP_files&#x27;</span>,
+                        <span class="py-src-variable">nargs</span>=<span class="py-src-string">&#x27;+&#x27;</span>,
+                        <span class="py-src-variable">help</span>=<span class="py-src-string">&#x27;TPTP file to convet&#x27;</span>)
+    <span class="py-src-variable">parser</span>.<span class="py-src-variable">add_argument</span>(<span class="py-src-string">&#x27;-o&#x27;</span>, <span class="py-src-string">&#x27;--output-dir&#x27;</span>, <span class="py-src-variable">default</span>=<span class="py-src-string">&#x27;dimacs&#x27;</span>,
+                        <span class="py-src-variable">help</span>=<span class="py-src-string">&#x27;where to save dimacs file&#x27;</span>)
+
+    <span class="py-src-variable">args</span> = <span class="py-src-variable">parser</span>.<span class="py-src-variable">parse_args</span>()
+
+    <span class="py-src-variable">pprint</span>(<span class="py-src-variable">args</span>)
+
+    <span class="py-src-variable">lexer</span> = <span class="py-src-variable">get_TPTP_lexer</span>()
+
+    <span class="py-src-variable">for</span> <span class="py-src-variable">TPTP_file</span> <span class="py-src-variable">in</span> <span class="py-src-variable">args</span>.<span class="py-src-variable">TPTP_files</span>:
+        <span class="py-src-variable">with</span> <span class="py-src-variable">open</span>(<span class="py-src-variable">TPTP_file</span>, <span class="py-src-string">&#x27;r&#x27;</span>) <span class="py-src-variable">as</span> <span class="py-src-variable">source</span>:
+            <span class="py-src-variable">tokens</span> = <span class="py-src-variable">lexer</span>.<span class="py-src-variable">lex</span>(<span class="py-src-variable">source</span>.<span class="py-src-variable">read</span>())
+
+            <span class="py-src-variable">pprint</span>(<span class="py-src-variable">list</span>(<span class="py-src-variable">tokens</span>))
+</pre>
+</body>
