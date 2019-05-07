@@ -1,8 +1,8 @@
 import re
 
-#comment_line = r'%.*'
-#comment_block = r'[\/][*]([^*]*[*][*]*[^\/*])*[^*]*[*][*]*[\/]'
-#comment = re.compile('('+comment_line+'|'+comment_block+')')
+comment_line = r'%.*'
+comment_block = r'[\/][*]([^*]*[*][*]*[^\/*])*[^*]*[*][*]*[\/]'
+comment = re.compile('('+comment_line+'|'+comment_block+')')
 
 #
 # #%----Character classes
