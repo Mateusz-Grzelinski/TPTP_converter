@@ -18,24 +18,23 @@ def get_TPTP_lexer():
     lg.add('formula_role', regexes.formula_role)
     lg.add('definied_type', regexes.defined_type)
 
-    lg.add('atomic_word',regexes.atomic_word)
-    lg.add('number',regexes.number)
+    lg.add('atomic_word', regexes.atomic_word)
+    lg.add('number', regexes.number)
     # lg.add('integer',regexes.integer)
     # lg.add('rational',regexes.rational)
     # lg.add('real',regexes.real)
 
     lg.add('variable', regexes.variable)
 
-
-    lg.add('defined_proposition',regexes.defined_proposition)
+    lg.add('defined_proposition', regexes.defined_proposition)
     lg.add('unary_connective', regexes.unary_connective)
     lg.add('infix_equality', regexes.infix_equality)
-    lg.add('assigment',regexes.assignment)
-    lg.add('gentzen_arrow',regexes.gentzen_arrow)
-    lg.add('infix_inequality',regexes.infix_inequality)
-    lg.add('nonassoc_connective',regexes.nonassoc_connective)
-    lg.add('subtype_sign',regexes.subtype_sign)
-    lg.add('fof_quantifier',regexes.fof_quantifier)
+    lg.add('assigment', regexes.assignment)
+    lg.add('gentzen_arrow', regexes.gentzen_arrow)
+    lg.add('infix_inequality', regexes.infix_inequality)
+    lg.add('nonassoc_connective', regexes.nonassoc_connective)
+    lg.add('subtype_sign', regexes.subtype_sign)
+    lg.add('fof_quantifier', regexes.fof_quantifier)
 
     lg.add('name', regexes.name)
     lg.add('open_parens', regexes.open_parens)
@@ -45,21 +44,21 @@ def get_TPTP_lexer():
     lg.add('star', regexes.star)
     lg.add('plus', regexes.plus)
     lg.add('arrow', regexes.arrow)
-    lg.add('less_sign',regexes.less_sign)
+    lg.add('less_sign', regexes.less_sign)
 
-    lg.add('percentage_sign',regexes.percentage_sign)
-    lg.add('double_quote',regexes.double_quote)
-    lg.add('single_quote',regexes.single_quote)
-    lg.add('sign',regexes.sign)
+    lg.add('percentage_sign', regexes.percentage_sign)
+    lg.add('double_quote', regexes.double_quote)
+    lg.add('single_quote', regexes.single_quote)
+    lg.add('sign', regexes.sign)
     lg.add('dot', regexes.dot)
-    lg.add('exponent',regexes.exponent)
-    lg.add('slash',regexes.slash)
+    lg.add('exponent', regexes.exponent)
+    lg.add('slash', regexes.slash)
 
-    lg.add('dollar',regexes.dollar)
+    lg.add('dollar', regexes.dollar)
 
-    lg.add('do_char',regexes.do_char)
+    lg.add('do_char', regexes.do_char)
 
-    lg.ignore(r'\s+')
+    lg.ignore(r'\s+' + '|' + regexes.comment)
 
     return lg.build()
 
