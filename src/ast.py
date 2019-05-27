@@ -1,29 +1,40 @@
 # ast - abstract syntax tree
+from dataclasses import dataclass, field
 from typing import List
-from rply.token import BaseBox
 
 
-class CNFAnnotated(BaseBox):
-    def __init__(self, name, formula_role, cnf_formula, annotations=None):
-        self.name = name
-        self.formula_role = formula_role
-        self.cnf_formula = cnf_formula
-        self.annotations = annotations
+@dataclass
+class Literal:
+    """atomic word or functor
+    literals with dolar are defined literals
+    """
+    name: str
+    negated: bool
 
 
-class Include(BaseBox):
-    def __init__(self, file_name, formula_selection: List = None):
-        self.file_name = file_name
-        self.formula_selection = formula_selection  # don't know what it does
+@dataclass
+class Formula:
+    name: str
+    formula_role: str
+    annotations: List[str] = field(default_factory=list)
 
 
-class FormulaRole(BaseBox):
-    pass
+@dataclass
+class CNFFormula(Formula):
+    """Represents single row in cnf formula.
+    variables are connected with 'or' statement
+    """
+    variables: List[Literal] = field(default_factory=list)
 
 
-class CNFFormula(BaseBox):
-    pass
+@dataclass
+class Include:
+    file_name: str
+    formula_selection: List[str] = field(default_factory=list)
 
 
-if __name__ == '__main__':
-    print('axiom')
+@dataclass
+class TPTPFile:
+    """Empty file is valid TPTP file"""
+    formula: List[Formula] = field(default_factory=list)
+    includes: List[Include] = field(default_factory=list)

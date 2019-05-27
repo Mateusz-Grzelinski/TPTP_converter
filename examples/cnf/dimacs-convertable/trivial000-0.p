@@ -1,3 +1,5 @@
+% this is comment
+
 cnf(predicates, axiom,
     ( p0
     | ~ q0

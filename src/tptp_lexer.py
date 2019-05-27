@@ -5,7 +5,7 @@ from src import regexes
 def get_TPTP_lexer():
     lg = LexerGenerator()
 
-    lg.add('comment', regexes.comment)
+    # lg.add('comment', regexes.comment)
     lg.add('TPTP_include', regexes.TPTP_include)
 
     lg.add('tpi_annotated', regexes.tpi_annotated)
