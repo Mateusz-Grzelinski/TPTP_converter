@@ -53,7 +53,7 @@ def get_TPTP_lexer():
 
     lg.add('dollar',regexes.dollar)
 
-    lg.add('do_char',regexes.do_char
+    lg.add('do_char',regexes.do_char)
 
     lg.ignore(r'\s+')
 
