@@ -38,7 +38,6 @@ tff_annotated = r'tff'
 tcf_annotated = r'tcf'
 fof_annotated = r'fof'
 cnf_annotated = r'cnf'
-not_cnf_annotated = tpi_annotated + '|' + thf_annotated + '|' + tff_annotated + '|' + tcf_annotated + '|' + fof_annotated
 
 defined_type = r'$oType|$o|$iType|$i|$tType|$real|$rat|$int'
 assignment = r':='

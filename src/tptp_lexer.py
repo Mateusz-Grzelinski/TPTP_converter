@@ -8,8 +8,12 @@ def get_TPTP_lexer():
     lg.add('comment', regexes.comment)
     lg.add('TPTP_include', regexes.TPTP_include)
 
-    lg.add('not_cnf_annotated', regexes.not_cnf_annotated)
+    lg.add('tpi_annotated', regexes.tpi_annotated)
+    lg.add('thf_annotated', regexes.thf_annotated)
+    lg.add('tff_annotated', regexes.tff_annotated)
+    lg.add('tcf_annotated', regexes.tcf_annotated)
     lg.add('cnf_annotated', regexes.cnf_annotated)
+    lg.add('fof_annotated', regexes.fof_annotated)
 
     lg.add('formula_role', regexes.formula_role)
     lg.add('definied_type', regexes.defined_type)
