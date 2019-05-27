@@ -89,5 +89,4 @@ name = atomic_word + '|' + integer
 
 atomic_word = lower_word + '|' + single_quoted
 
-upper_word = upper_alpha + alpha_numeric + '*'
 variable = upper_word
