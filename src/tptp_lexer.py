@@ -1,5 +1,5 @@
 from rply import LexerGenerator
-import regexes
+from . import regexes
 
 
 def get_TPTP_lexer():
