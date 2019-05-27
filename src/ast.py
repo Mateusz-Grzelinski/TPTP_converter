@@ -11,6 +11,15 @@ class Literal:
     name: str
     negated: bool
 
+    # todo handle variables (starts with uppercase) and predicates (ex. tata(Tomek))
+    def is_variable(self):
+        return self.name[0].isupper()
+
+
+    # todo: is it needed?
+    def is_predefined(self):
+        return self.name in {'$less', '$lesseq', '...'}
+
 
 @dataclass
 class Formula:
