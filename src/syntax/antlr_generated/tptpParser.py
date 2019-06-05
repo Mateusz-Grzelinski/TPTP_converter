@@ -1272,12 +1272,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTptp_file" ):
                 listener.exitTptp_file(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTptp_file" ):
-                return visitor.visitTptp_file(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1333,12 +1327,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTptp_input" ):
                 listener.exitTptp_input(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTptp_input" ):
-                return visitor.visitTptp_input(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1417,12 +1405,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitAnnotated_formula" ):
                 listener.exitAnnotated_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAnnotated_formula" ):
-                return visitor.visitAnnotated_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1515,12 +1497,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTpi_annotated" ):
                 listener.exitTpi_annotated(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTpi_annotated" ):
-                return visitor.visitTpi_annotated(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1583,12 +1559,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTpi_formula" ):
                 listener.exitTpi_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTpi_formula" ):
-                return visitor.visitTpi_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1641,12 +1611,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_annotated" ):
                 listener.exitThf_annotated(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_annotated" ):
-                return visitor.visitThf_annotated(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1722,12 +1686,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTfx_annotated" ):
                 listener.exitTfx_annotated(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTfx_annotated" ):
-                return visitor.visitTfx_annotated(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1801,12 +1759,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_annotated" ):
                 listener.exitTff_annotated(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_annotated" ):
-                return visitor.visitTff_annotated(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1882,12 +1834,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTcf_annotated" ):
                 listener.exitTcf_annotated(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTcf_annotated" ):
-                return visitor.visitTcf_annotated(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1961,12 +1907,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_annotated" ):
                 listener.exitFof_annotated(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_annotated" ):
-                return visitor.visitFof_annotated(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2042,12 +1982,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitCnf_annotated" ):
                 listener.exitCnf_annotated(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitCnf_annotated" ):
-                return visitor.visitCnf_annotated(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2114,12 +2048,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitAnnotations" ):
                 listener.exitAnnotations(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAnnotations" ):
-                return visitor.visitAnnotations(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2171,12 +2099,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFormula_role" ):
                 listener.exitFormula_role(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFormula_role" ):
-                return visitor.visitFormula_role(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2221,12 +2143,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_formula" ):
                 listener.exitThf_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_formula" ):
-                return visitor.visitThf_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2293,12 +2209,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_logic_formula" ):
                 listener.exitThf_logic_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_logic_formula" ):
-                return visitor.visitThf_logic_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2374,12 +2284,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_binary_formula" ):
                 listener.exitThf_binary_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_binary_formula" ):
-                return visitor.visitThf_binary_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2447,12 +2351,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_binary_pair" ):
                 listener.exitThf_binary_pair(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_binary_pair" ):
-                return visitor.visitThf_binary_pair(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2505,12 +2403,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_binary_tuple" ):
                 listener.exitThf_binary_tuple(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_binary_tuple" ):
-                return visitor.visitThf_binary_tuple(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2581,12 +2473,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_or_formula" ):
                 listener.exitThf_or_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_or_formula" ):
-                return visitor.visitThf_or_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2668,12 +2554,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_and_formula" ):
                 listener.exitThf_and_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_and_formula" ):
-                return visitor.visitThf_and_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
     def thf_and_formula(self, _p:int=0):
@@ -2753,12 +2633,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_apply_formula" ):
                 listener.exitThf_apply_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_apply_formula" ):
-                return visitor.visitThf_apply_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2854,12 +2728,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_unitary_formula" ):
                 listener.exitThf_unitary_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_unitary_formula" ):
-                return visitor.visitThf_unitary_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2952,12 +2820,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_quantified_formula" ):
                 listener.exitThf_quantified_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_quantified_formula" ):
-                return visitor.visitThf_quantified_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -3004,12 +2866,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_quantification" ):
                 listener.exitThf_quantification(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_quantification" ):
-                return visitor.visitThf_quantification(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -3062,12 +2918,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_variable_list" ):
                 listener.exitThf_variable_list(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_variable_list" ):
-                return visitor.visitThf_variable_list(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -3127,12 +2977,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_variable" ):
                 listener.exitThf_variable(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_variable" ):
-                return visitor.visitThf_variable(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -3191,12 +3035,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_typed_variable" ):
                 listener.exitThf_typed_variable(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_typed_variable" ):
-                return visitor.visitThf_typed_variable(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -3245,12 +3083,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_unary_formula" ):
                 listener.exitThf_unary_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_unary_formula" ):
-                return visitor.visitThf_unary_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -3310,12 +3142,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_atom" ):
                 listener.exitThf_atom(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_atom" ):
-                return visitor.visitThf_atom(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -3396,12 +3222,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_function" ):
                 listener.exitThf_function(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_function" ):
-                return visitor.visitThf_function(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -3495,12 +3315,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_conn_term" ):
                 listener.exitThf_conn_term(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_conn_term" ):
-                return visitor.visitThf_conn_term(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -3563,12 +3377,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_conditional" ):
                 listener.exitThf_conditional(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_conditional" ):
-                return visitor.visitThf_conditional(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -3626,12 +3434,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_let" ):
                 listener.exitThf_let(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_let" ):
-                return visitor.visitThf_let(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -3681,12 +3483,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_arguments" ):
                 listener.exitThf_arguments(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_arguments" ):
-                return visitor.visitThf_arguments(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -3731,12 +3527,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_type_formula" ):
                 listener.exitThf_type_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_type_formula" ):
-                return visitor.visitThf_type_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -3786,12 +3576,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_typeable_formula" ):
                 listener.exitThf_typeable_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_typeable_formula" ):
-                return visitor.visitThf_typeable_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -3857,12 +3641,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_subtype" ):
                 listener.exitThf_subtype(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_subtype" ):
-                return visitor.visitThf_subtype(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -3915,12 +3693,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_top_level_type" ):
                 listener.exitThf_top_level_type(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_top_level_type" ):
-                return visitor.visitThf_top_level_type(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -3982,12 +3754,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_unitary_type" ):
                 listener.exitThf_unitary_type(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_unitary_type" ):
-                return visitor.visitThf_unitary_type(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -4028,12 +3794,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_apply_type" ):
                 listener.exitThf_apply_type(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_apply_type" ):
-                return visitor.visitThf_apply_type(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -4083,12 +3843,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_binary_type" ):
                 listener.exitThf_binary_type(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_binary_type" ):
-                return visitor.visitThf_binary_type(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -4159,12 +3913,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_mapping_type" ):
                 listener.exitThf_mapping_type(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_mapping_type" ):
-                return visitor.visitThf_mapping_type(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -4237,12 +3985,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_xprod_type" ):
                 listener.exitThf_xprod_type(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_xprod_type" ):
-                return visitor.visitThf_xprod_type(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -4324,12 +4066,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_union_type" ):
                 listener.exitThf_union_type(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_union_type" ):
-                return visitor.visitThf_union_type(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
     def thf_union_type(self, _p:int=0):
@@ -4410,12 +4146,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_sequent" ):
                 listener.exitThf_sequent(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_sequent" ):
-                return visitor.visitThf_sequent(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -4477,12 +4207,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_tuple" ):
                 listener.exitThf_tuple(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_tuple" ):
-                return visitor.visitThf_tuple(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -4559,12 +4283,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_formula_list" ):
                 listener.exitThf_formula_list(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_formula_list" ):
-                return visitor.visitThf_formula_list(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -4623,12 +4341,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTfx_formula" ):
                 listener.exitTfx_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTfx_formula" ):
-                return visitor.visitTfx_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -4683,12 +4395,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTfx_logic_formula" ):
                 listener.exitTfx_logic_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTfx_logic_formula" ):
-                return visitor.visitTfx_logic_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -4737,12 +4443,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_formula" ):
                 listener.exitTff_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_formula" ):
-                return visitor.visitTff_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -4812,12 +4512,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_logic_formula" ):
                 listener.exitTff_logic_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_logic_formula" ):
-                return visitor.visitTff_logic_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -4882,12 +4576,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_binary_formula" ):
                 listener.exitTff_binary_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_binary_formula" ):
-                return visitor.visitTff_binary_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -4949,12 +4637,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_binary_nonassoc" ):
                 listener.exitTff_binary_nonassoc(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_binary_nonassoc" ):
-                return visitor.visitTff_binary_nonassoc(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -5003,12 +4685,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_binary_assoc" ):
                 listener.exitTff_binary_assoc(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_binary_assoc" ):
-                return visitor.visitTff_binary_assoc(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -5073,12 +4749,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_or_formula" ):
                 listener.exitTff_or_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_or_formula" ):
-                return visitor.visitTff_or_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -5159,12 +4829,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_and_formula" ):
                 listener.exitTff_and_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_and_formula" ):
-                return visitor.visitTff_and_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -5256,12 +4920,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_unitary_formula" ):
                 listener.exitTff_unitary_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_unitary_formula" ):
-                return visitor.visitTff_unitary_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -5352,12 +5010,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_quantified_formula" ):
                 listener.exitTff_quantified_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_quantified_formula" ):
-                return visitor.visitTff_quantified_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -5411,12 +5063,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_variable_list" ):
                 listener.exitTff_variable_list(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_variable_list" ):
-                return visitor.visitTff_variable_list(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -5476,12 +5122,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_variable" ):
                 listener.exitTff_variable(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_variable" ):
-                return visitor.visitTff_variable(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -5540,12 +5180,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_typed_variable" ):
                 listener.exitTff_typed_variable(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_typed_variable" ):
-                return visitor.visitTff_typed_variable(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -5598,12 +5232,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_unary_formula" ):
                 listener.exitTff_unary_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_unary_formula" ):
-                return visitor.visitTff_unary_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -5661,12 +5289,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_atomic_formula" ):
                 listener.exitTff_atomic_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_atomic_formula" ):
-                return visitor.visitTff_atomic_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -5710,12 +5332,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_conditional" ):
                 listener.exitTff_conditional(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_conditional" ):
-                return visitor.visitTff_conditional(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -5777,12 +5393,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_let" ):
                 listener.exitTff_let(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_let" ):
-                return visitor.visitTff_let(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -5858,12 +5468,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_let_term_defns" ):
                 listener.exitTff_let_term_defns(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_let_term_defns" ):
-                return visitor.visitTff_let_term_defns(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -5924,12 +5528,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_let_term_list" ):
                 listener.exitTff_let_term_list(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_let_term_list" ):
-                return visitor.visitTff_let_term_list(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -5995,12 +5593,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_let_term_defn" ):
                 listener.exitTff_let_term_defn(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_let_term_defn" ):
-                return visitor.visitTff_let_term_defn(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -6077,12 +5669,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_let_term_binding" ):
                 listener.exitTff_let_term_binding(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_let_term_binding" ):
-                return visitor.visitTff_let_term_binding(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -6149,12 +5735,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_let_formula_defns" ):
                 listener.exitTff_let_formula_defns(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_let_formula_defns" ):
-                return visitor.visitTff_let_formula_defns(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -6215,12 +5795,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_let_formula_list" ):
                 listener.exitTff_let_formula_list(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_let_formula_list" ):
-                return visitor.visitTff_let_formula_list(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -6286,12 +5860,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_let_formula_defn" ):
                 listener.exitTff_let_formula_defn(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_let_formula_defn" ):
-                return visitor.visitTff_let_formula_defn(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -6368,12 +5936,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_let_formula_binding" ):
                 listener.exitTff_let_formula_binding(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_let_formula_binding" ):
-                return visitor.visitTff_let_formula_binding(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -6446,12 +6008,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_sequent" ):
                 listener.exitTff_sequent(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_sequent" ):
-                return visitor.visitTff_sequent(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -6514,12 +6070,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_formula_tuple" ):
                 listener.exitTff_formula_tuple(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_formula_tuple" ):
-                return visitor.visitTff_formula_tuple(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -6580,12 +6130,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_formula_tuple_list" ):
                 listener.exitTff_formula_tuple_list(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_formula_tuple_list" ):
-                return visitor.visitTff_formula_tuple_list(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -6648,12 +6192,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_typed_atom" ):
                 listener.exitTff_typed_atom(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_typed_atom" ):
-                return visitor.visitTff_typed_atom(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -6724,12 +6262,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_subtype" ):
                 listener.exitTff_subtype(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_subtype" ):
-                return visitor.visitTff_subtype(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -6786,12 +6318,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_top_level_type" ):
                 listener.exitTff_top_level_type(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_top_level_type" ):
-                return visitor.visitTff_top_level_type(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -6870,12 +6396,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTf1_quantified_type" ):
                 listener.exitTf1_quantified_type(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTf1_quantified_type" ):
-                return visitor.visitTf1_quantified_type(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -6930,12 +6450,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_monotype" ):
                 listener.exitTff_monotype(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_monotype" ):
-                return visitor.visitTff_monotype(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -6998,12 +6512,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_unitary_type" ):
                 listener.exitTff_unitary_type(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_unitary_type" ):
-                return visitor.visitTff_unitary_type(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -7078,12 +6586,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_atomic_type" ):
                 listener.exitTff_atomic_type(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_atomic_type" ):
-                return visitor.visitTff_atomic_type(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -7160,12 +6662,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_type_arguments" ):
                 listener.exitTff_type_arguments(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_type_arguments" ):
-                return visitor.visitTff_type_arguments(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -7227,12 +6723,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_mapping_type" ):
                 listener.exitTff_mapping_type(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_mapping_type" ):
-                return visitor.visitTff_mapping_type(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -7288,12 +6778,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_xprod_type" ):
                 listener.exitTff_xprod_type(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_xprod_type" ):
-                return visitor.visitTff_xprod_type(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -7369,12 +6853,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTcf_formula" ):
                 listener.exitTcf_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTcf_formula" ):
-                return visitor.visitTcf_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -7432,12 +6910,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTcf_logic_formula" ):
                 listener.exitTcf_logic_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTcf_logic_formula" ):
-                return visitor.visitTcf_logic_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -7500,12 +6972,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTcf_quantified_formula" ):
                 listener.exitTcf_quantified_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTcf_quantified_formula" ):
-                return visitor.visitTcf_quantified_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -7560,12 +7026,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_formula" ):
                 listener.exitFof_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_formula" ):
-                return visitor.visitFof_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -7625,12 +7085,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_logic_formula" ):
                 listener.exitFof_logic_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_logic_formula" ):
-                return visitor.visitFof_logic_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -7688,12 +7142,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_binary_formula" ):
                 listener.exitFof_binary_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_binary_formula" ):
-                return visitor.visitFof_binary_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -7756,12 +7204,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_binary_nonassoc" ):
                 listener.exitFof_binary_nonassoc(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_binary_nonassoc" ):
-                return visitor.visitFof_binary_nonassoc(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -7810,12 +7252,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_binary_assoc" ):
                 listener.exitFof_binary_assoc(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_binary_assoc" ):
-                return visitor.visitFof_binary_assoc(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -7880,12 +7316,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_or_formula" ):
                 listener.exitFof_or_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_or_formula" ):
-                return visitor.visitFof_or_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -7966,12 +7396,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_and_formula" ):
                 listener.exitFof_and_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_and_formula" ):
-                return visitor.visitFof_and_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -8055,12 +7479,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_unitary_formula" ):
                 listener.exitFof_unitary_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_unitary_formula" ):
-                return visitor.visitFof_unitary_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -8139,12 +7557,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_quantified_formula" ):
                 listener.exitFof_quantified_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_quantified_formula" ):
-                return visitor.visitFof_quantified_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -8198,12 +7610,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_variable_list" ):
                 listener.exitFof_variable_list(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_variable_list" ):
-                return visitor.visitFof_variable_list(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -8267,12 +7673,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_unary_formula" ):
                 listener.exitFof_unary_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_unary_formula" ):
-                return visitor.visitFof_unary_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -8335,12 +7735,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_infix_unary" ):
                 listener.exitFof_infix_unary(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_infix_unary" ):
-                return visitor.visitFof_infix_unary(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -8393,12 +7787,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_atomic_formula" ):
                 listener.exitFof_atomic_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_atomic_formula" ):
-                return visitor.visitFof_atomic_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -8460,12 +7848,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_plain_atomic_formula" ):
                 listener.exitFof_plain_atomic_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_plain_atomic_formula" ):
-                return visitor.visitFof_plain_atomic_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -8510,12 +7892,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_defined_atomic_formula" ):
                 listener.exitFof_defined_atomic_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_defined_atomic_formula" ):
-                return visitor.visitFof_defined_atomic_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -8571,12 +7947,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_defined_plain_formula" ):
                 listener.exitFof_defined_plain_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_defined_plain_formula" ):
-                return visitor.visitFof_defined_plain_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -8625,12 +7995,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_defined_infix_formula" ):
                 listener.exitFof_defined_infix_formula(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_defined_infix_formula" ):
-                return visitor.visitFof_defined_infix_formula(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -8675,12 +8039,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_system_atomic_formula" ):
                 listener.exitFof_system_atomic_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_system_atomic_formula" ):
-                return visitor.visitFof_system_atomic_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -8730,12 +8088,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_plain_term" ):
                 listener.exitFof_plain_term(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_plain_term" ):
-                return visitor.visitFof_plain_term(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -8801,12 +8153,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_defined_term" ):
                 listener.exitFof_defined_term(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_defined_term" ):
-                return visitor.visitFof_defined_term(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -8861,12 +8207,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_defined_atomic_term" ):
                 listener.exitFof_defined_atomic_term(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_defined_atomic_term" ):
-                return visitor.visitFof_defined_atomic_term(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -8915,12 +8255,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_defined_plain_term" ):
                 listener.exitFof_defined_plain_term(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_defined_plain_term" ):
-                return visitor.visitFof_defined_plain_term(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -8990,12 +8324,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_system_term" ):
                 listener.exitFof_system_term(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_system_term" ):
-                return visitor.visitFof_system_term(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -9058,12 +8386,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_arguments" ):
                 listener.exitFof_arguments(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_arguments" ):
-                return visitor.visitFof_arguments(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -9134,12 +8456,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_term" ):
                 listener.exitFof_term(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_term" ):
-                return visitor.visitFof_term(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -9218,12 +8534,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_function_term" ):
                 listener.exitFof_function_term(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_function_term" ):
-                return visitor.visitFof_function_term(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -9290,12 +8600,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_conditional_term" ):
                 listener.exitTff_conditional_term(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_conditional_term" ):
-                return visitor.visitTff_conditional_term(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -9356,12 +8660,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_let_term" ):
                 listener.exitTff_let_term(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_let_term" ):
-                return visitor.visitTff_let_term(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -9433,12 +8731,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTff_tuple_term" ):
                 listener.exitTff_tuple_term(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_tuple_term" ):
-                return visitor.visitTff_tuple_term(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -9507,12 +8799,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_sequent" ):
                 listener.exitFof_sequent(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_sequent" ):
-                return visitor.visitFof_sequent(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -9575,12 +8861,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_formula_tuple" ):
                 listener.exitFof_formula_tuple(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_formula_tuple" ):
-                return visitor.visitFof_formula_tuple(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -9642,12 +8922,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFof_formula_tuple_list" ):
                 listener.exitFof_formula_tuple_list(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_formula_tuple_list" ):
-                return visitor.visitFof_formula_tuple_list(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -9701,12 +8975,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitCnf_formula" ):
                 listener.exitCnf_formula(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitCnf_formula" ):
-                return visitor.visitCnf_formula(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -9772,12 +9040,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitCnf_disjunction" ):
                 listener.exitCnf_disjunction(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitCnf_disjunction" ):
-                return visitor.visitCnf_disjunction(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -9852,12 +9114,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitCnf_literal" ):
                 listener.exitCnf_literal(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitCnf_literal" ):
-                return visitor.visitCnf_literal(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -9928,12 +9184,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_quantifier" ):
                 listener.exitThf_quantifier(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_quantifier" ):
-                return visitor.visitThf_quantifier(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -9998,12 +9248,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTh0_quantifier" ):
                 listener.exitTh0_quantifier(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTh0_quantifier" ):
-                return visitor.visitTh0_quantifier(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -10052,12 +9296,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTh1_quantifier" ):
                 listener.exitTh1_quantifier(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTh1_quantifier" ):
-                return visitor.visitTh1_quantifier(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -10114,12 +9352,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitThf_pair_connective" ):
                 listener.exitThf_pair_connective(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_pair_connective" ):
-                return visitor.visitThf_pair_connective(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -10189,12 +9421,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitThf_unary_connective" ):
                 listener.exitThf_unary_connective(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitThf_unary_connective" ):
-                return visitor.visitThf_unary_connective(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -10260,12 +9486,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTh1_unary_connective" ):
                 listener.exitTh1_unary_connective(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTh1_unary_connective" ):
-                return visitor.visitTh1_unary_connective(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -10315,12 +9535,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTff_pair_connective" ):
                 listener.exitTff_pair_connective(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTff_pair_connective" ):
-                return visitor.visitTff_pair_connective(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -10377,12 +9591,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFof_quantifier" ):
                 listener.exitFof_quantifier(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFof_quantifier" ):
-                return visitor.visitFof_quantifier(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -10445,12 +9653,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitBinary_connective" ):
                 listener.exitBinary_connective(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitBinary_connective" ):
-                return visitor.visitBinary_connective(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -10500,12 +9702,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitAssoc_connective" ):
                 listener.exitAssoc_connective(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAssoc_connective" ):
-                return visitor.visitAssoc_connective(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -10552,12 +9748,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitUnary_connective" ):
                 listener.exitUnary_connective(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitUnary_connective" ):
-                return visitor.visitUnary_connective(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -10598,12 +9788,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitType_constant" ):
                 listener.exitType_constant(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitType_constant" ):
-                return visitor.visitType_constant(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -10646,12 +9830,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitType_functor" ):
                 listener.exitType_functor(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitType_functor" ):
-                return visitor.visitType_functor(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -10691,12 +9869,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitDefined_type" ):
                 listener.exitDefined_type(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDefined_type" ):
-                return visitor.visitDefined_type(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -10738,12 +9910,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitSystem_type" ):
                 listener.exitSystem_type(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitSystem_type" ):
-                return visitor.visitSystem_type(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -10789,12 +9955,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitAtom" ):
                 listener.exitAtom(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAtom" ):
-                return visitor.visitAtom(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -10854,12 +10014,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitUntyped_atom" ):
                 listener.exitUntyped_atom(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitUntyped_atom" ):
-                return visitor.visitUntyped_atom(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -10913,12 +10067,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitDefined_proposition" ):
                 listener.exitDefined_proposition(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDefined_proposition" ):
-                return visitor.visitDefined_proposition(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -10958,12 +10106,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitDefined_predicate" ):
                 listener.exitDefined_predicate(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDefined_predicate" ):
-                return visitor.visitDefined_predicate(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -11007,12 +10149,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitDefined_infix_pred" ):
                 listener.exitDefined_infix_pred(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDefined_infix_pred" ):
-                return visitor.visitDefined_infix_pred(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -11061,12 +10197,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitConstant" ):
                 listener.exitConstant(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitConstant" ):
-                return visitor.visitConstant(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -11107,12 +10237,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFunctor" ):
                 listener.exitFunctor(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFunctor" ):
-                return visitor.visitFunctor(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -11155,12 +10279,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitSystem_constant" ):
                 listener.exitSystem_constant(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitSystem_constant" ):
-                return visitor.visitSystem_constant(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -11201,12 +10319,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitSystem_functor" ):
                 listener.exitSystem_functor(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitSystem_functor" ):
-                return visitor.visitSystem_functor(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -11249,12 +10361,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitDefined_constant" ):
                 listener.exitDefined_constant(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDefined_constant" ):
-                return visitor.visitDefined_constant(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -11295,12 +10401,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitDefined_functor" ):
                 listener.exitDefined_functor(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDefined_functor" ):
-                return visitor.visitDefined_functor(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -11345,12 +10445,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitDefined_term" ):
                 listener.exitDefined_term(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDefined_term" ):
-                return visitor.visitDefined_term(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -11404,12 +10498,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitVariable" ):
                 listener.exitVariable(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitVariable" ):
-                return visitor.visitVariable(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -11466,12 +10554,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitSource" ):
                 listener.exitSource(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitSource" ):
-                return visitor.visitSource(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -11552,12 +10634,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitSources" ):
                 listener.exitSources(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitSources" ):
-                return visitor.visitSources(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -11615,12 +10691,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitDag_source" ):
                 listener.exitDag_source(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDag_source" ):
-                return visitor.visitDag_source(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -11684,12 +10754,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitInference_record" ):
                 listener.exitInference_record(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitInference_record" ):
-                return visitor.visitInference_record(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -11743,12 +10807,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitInference_rule" ):
                 listener.exitInference_rule(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitInference_rule" ):
-                return visitor.visitInference_rule(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -11789,12 +10847,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitInference_parents" ):
                 listener.exitInference_parents(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitInference_parents" ):
-                return visitor.visitInference_parents(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -11857,12 +10909,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitParent_list" ):
                 listener.exitParent_list(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitParent_list" ):
-                return visitor.visitParent_list(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -11921,12 +10967,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitParent_info" ):
                 listener.exitParent_info(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitParent_info" ):
-                return visitor.visitParent_info(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -11977,12 +11017,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitParent_details" ):
                 listener.exitParent_details(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitParent_details" ):
-                return visitor.visitParent_details(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -12029,12 +11063,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitInternal_source" ):
                 listener.exitInternal_source(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitInternal_source" ):
-                return visitor.visitInternal_source(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -12089,12 +11117,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitIntro_type" ):
                 listener.exitIntro_type(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitIntro_type" ):
-                return visitor.visitIntro_type(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -12143,12 +11165,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitExternal_source" ):
                 listener.exitExternal_source(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitExternal_source" ):
-                return visitor.visitExternal_source(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -12213,12 +11229,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFile_source" ):
                 listener.exitFile_source(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFile_source" ):
-                return visitor.visitFile_source(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -12273,12 +11283,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFile_info" ):
                 listener.exitFile_info(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFile_info" ):
-                return visitor.visitFile_info(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -12325,12 +11329,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTheory" ):
                 listener.exitTheory(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTheory" ):
-                return visitor.visitTheory(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -12385,12 +11383,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitTheory_name" ):
                 listener.exitTheory_name(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTheory_name" ):
-                return visitor.visitTheory_name(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -12435,12 +11427,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitCreator_source" ):
                 listener.exitCreator_source(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitCreator_source" ):
-                return visitor.visitCreator_source(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -12496,12 +11482,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitCreator_name" ):
                 listener.exitCreator_name(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitCreator_name" ):
-                return visitor.visitCreator_name(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -12542,12 +11522,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitOptional_info" ):
                 listener.exitOptional_info(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitOptional_info" ):
-                return visitor.visitOptional_info(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -12595,12 +11569,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitUseful_info" ):
                 listener.exitUseful_info(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitUseful_info" ):
-                return visitor.visitUseful_info(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -12669,12 +11637,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitInfo_items" ):
                 listener.exitInfo_items(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitInfo_items" ):
-                return visitor.visitInfo_items(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -12736,12 +11698,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitInfo_item" ):
                 listener.exitInfo_item(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitInfo_item" ):
-                return visitor.visitInfo_item(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -12807,12 +11763,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFormula_item" ):
                 listener.exitFormula_item(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFormula_item" ):
-                return visitor.visitFormula_item(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -12867,12 +11817,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitDescription_item" ):
                 listener.exitDescription_item(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDescription_item" ):
-                return visitor.visitDescription_item(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -12917,12 +11861,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitIquote_item" ):
                 listener.exitIquote_item(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitIquote_item" ):
-                return visitor.visitIquote_item(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -12980,12 +11918,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitInference_item" ):
                 listener.exitInference_item(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitInference_item" ):
-                return visitor.visitInference_item(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -13055,12 +11987,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitInference_status" ):
                 listener.exitInference_status(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitInference_status" ):
-                return visitor.visitInference_status(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -13118,12 +12044,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitStatus_value" ):
                 listener.exitStatus_value(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitStatus_value" ):
-                return visitor.visitStatus_value(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -13172,12 +12092,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitInference_info" ):
                 listener.exitInference_info(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitInference_info" ):
-                return visitor.visitInference_info(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -13230,12 +12144,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitAssumptions_record" ):
                 listener.exitAssumptions_record(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAssumptions_record" ):
-                return visitor.visitAssumptions_record(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -13285,12 +12193,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitRefutation" ):
                 listener.exitRefutation(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRefutation" ):
-                return visitor.visitRefutation(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -13339,12 +12241,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitNew_symbol_record" ):
                 listener.exitNew_symbol_record(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNew_symbol_record" ):
-                return visitor.visitNew_symbol_record(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -13401,12 +12297,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitNew_symbol_list" ):
                 listener.exitNew_symbol_list(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNew_symbol_list" ):
-                return visitor.visitNew_symbol_list(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -13466,12 +12356,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitPrincipal_symbol" ):
                 listener.exitPrincipal_symbol(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitPrincipal_symbol" ):
-                return visitor.visitPrincipal_symbol(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -13530,12 +12414,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitInclude" ):
                 listener.exitInclude(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitInclude" ):
-                return visitor.visitInclude(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -13590,12 +12468,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitFormula_selection" ):
                 listener.exitFormula_selection(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFormula_selection" ):
-                return visitor.visitFormula_selection(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -13645,12 +12517,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitName_list" ):
                 listener.exitName_list(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitName_list" ):
-                return visitor.visitName_list(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -13713,12 +12579,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitGeneral_term" ):
                 listener.exitGeneral_term(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitGeneral_term" ):
-                return visitor.visitGeneral_term(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -13803,12 +12663,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitGeneral_data" ):
                 listener.exitGeneral_data(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitGeneral_data" ):
-                return visitor.visitGeneral_data(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -13891,12 +12745,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitGeneral_function" ):
                 listener.exitGeneral_function(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitGeneral_function" ):
-                return visitor.visitGeneral_function(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -13959,12 +12807,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFormula_data" ):
                 listener.exitFormula_data(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFormula_data" ):
-                return visitor.visitFormula_data(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -14055,12 +12897,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitGeneral_list" ):
                 listener.exitGeneral_list(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitGeneral_list" ):
-                return visitor.visitGeneral_list(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -14122,12 +12958,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitGeneral_terms" ):
                 listener.exitGeneral_terms(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitGeneral_terms" ):
-                return visitor.visitGeneral_terms(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -14185,12 +13015,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitName" ):
                 listener.exitName(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitName" ):
-                return visitor.visitName(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -14247,12 +13071,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitAtomic_word" ):
                 listener.exitAtomic_word(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAtomic_word" ):
-                return visitor.visitAtomic_word(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -14299,12 +13117,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitAtomic_defined_word" ):
                 listener.exitAtomic_defined_word(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAtomic_defined_word" ):
-                return visitor.visitAtomic_defined_word(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -14344,12 +13156,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitAtomic_system_word" ):
                 listener.exitAtomic_system_word(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAtomic_system_word" ):
-                return visitor.visitAtomic_system_word(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -14397,12 +13203,6 @@ class tptpParser ( Parser ):
             if hasattr( listener, "exitNumber" ):
                 listener.exitNumber(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNumber" ):
-                return visitor.visitNumber(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -14448,12 +13248,6 @@ class tptpParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFile_name" ):
                 listener.exitFile_name(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFile_name" ):
-                return visitor.visitFile_name(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 

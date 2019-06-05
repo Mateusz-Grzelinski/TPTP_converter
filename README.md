@@ -27,10 +27,10 @@ Python 3.6 or higher required.
 pip install -r requirements.txt
 ```
 
-Additionally for generatring antrl4 parser install antlr4 executalble and execute:
+Additionally for generating antrl4 parser install antlr4 executable and execute:
 
 ```bash
-antlr4 -visitor -Dlanguage=Python3 tptp.g4
+antlr4 -Dlanguage=Python3 -o antlr_generated tptp.g4 dimacs.g4
 ```
 
 Do not edit files in `antrl` directory except grammar file `tptp.g4`. The rest is generated automatically by antlr

@@ -3,7 +3,7 @@ from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .tptpParser import tptpParser
 else:
-    from src.syntax import tptpParser
+    from tptpParser import tptpParser
 
 # This class defines a complete listener for a parse tree produced by tptpParser.
 class tptpListener(ParseTreeListener):
