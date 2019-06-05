@@ -4,7 +4,7 @@ from src.syntax.antlr_generated.tptpParser import tptpParser, ParseTreeWalker, P
 from src.syntax.antlr_generated.tptpLexer import tptpLexer
 
 if __name__ == '__main__':
-    input_stream = FileStream('/home/mat/studia-repos/studio-projektowe/TPTP-v7.2.0/Problems/SYN/SYN037-2.p')
+    input_stream = FileStream('../../examples/cnf/TPTP-library/PUZ031-1.p')
     lexer = tptpLexer(input_stream)
     stream = CommonTokenStream(lexer)
     parser = tptpParser(stream)
