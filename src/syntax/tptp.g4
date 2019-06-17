@@ -1,12 +1,3 @@
-// created by Alexander Steen (a.steen@fu-berlin.de)
-// and Tobias Gleißner (tobias.gleissner@fu-berlin.de)
-// tptp version 7.0.0.0
-
-// #INFO is about sections or where the parse tree has been flattened according to ANTLR idiomatics
-// #ALT alternative grammar formulation for some parts
-// #RES where no further restrictions are applied e.g. in the case of defined_functor
-// any dollar word is allowed instead of only the predefined functors
-
 grammar tptp;
 
 // #INFO HERE COME THE LEXER RULES

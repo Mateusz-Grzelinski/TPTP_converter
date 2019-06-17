@@ -1,7 +1,5 @@
 grammar dimacs;
 
-// ranges [1-9] [0-9] does not work, don't know why
-// match integers with no leading zeros,
 Non_zero_integer : [123456789] [0123456789]*;
 
 Not : '-';
