@@ -30,10 +30,10 @@ pip install -r requirements.txt
 Additionally for generating antrl4 parser install antlr4 executable and execute:
 
 ```bash
-antlr4 -Dlanguage=Python3 -o antlr_generated tptp.g4 dimacs.g4
+antlr4 -Dlanguage=Python3 -o antlr_generated tptp.g4
 ```
 
-Do not edit files in `antrl` directory except grammar file `tptp.g4`. The rest is generated automatically by antlr
+Do not edit files in `antrl_generated` they are generated auytomatically. There is also defined grammar for dimacs but it was not used.
 
 ## Usage
 

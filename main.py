@@ -1,28 +1,33 @@
 import argparse
-from pprint import pprint
+import sys
 
-from src.parser import get_TPTP_parser
-from src.tptp_lexer import get_TPTP_lexer
+from src.antlr_generated.tptpLexer import tptpLexer
+from src.antlr_generated.tptpParser import tptpParser, ParseTreeWalker, FileStream, CommonTokenStream
+from src.dimacs_converter import DimacsConverter
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description='TPTP to dimacs converter')
+    parser.add_argument('-f', '--file',
+                        help='TPTP file to convet',
+                        required=True)
+    parser.add_argument('-o', '--output',
+                        help='where to save dimacs file')
+    return parser.parse_args()
+
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='TPTP to dimacs converter')
-    parser.add_argument('TPTP_files',
-                        nargs='+',
-                        help='TPTP file to convet')
-    parser.add_argument('-o', '--output-dir', default='dimacs',
-                        help='where to save dimacs file')
+    args = parse_args()
 
-    args = parser.parse_args()
+    if args.output is not None:
+        sys.stdout = open(args.output, 'w')
 
-    pprint(args)
+    input_stream = FileStream(args.file)
+    lexer = tptpLexer(input_stream)
+    stream = CommonTokenStream(lexer)
+    parser = tptpParser(stream)
+    tree = parser.tptp_file()
 
-    lexer = get_TPTP_lexer()
-    parser = get_TPTP_parser()
-
-    for TPTP_file in args.TPTP_files:
-        with open(TPTP_file, 'r') as source:
-            tokens = lexer.lex(source.read())
-            pprint(list(tokens))
-
-            parser.parse(tokens)
-
+    printer = DimacsConverter()
+    walker = ParseTreeWalker()
+    walker.walk(printer, tree)

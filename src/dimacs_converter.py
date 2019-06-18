@@ -1,16 +1,13 @@
-from src.syntax.antlr_generated.tptpParser import tptpParser
+from src.antlr_generated.tptpParser import tptpParser
+from src.antlr_generated.tptpListener import tptpListener
 
-from src.syntax.antlr_generated.tptpListener import tptpListener
 
-
-class DimacsConverterListener(tptpListener):
+class DimacsConverter(tptpListener):
     def __init__(self):
         self.variables = {}
         self.number_of_variables = 0
         self.number_of_clauses = 0
         self.delimiter = 0
-        self.name = ''
-        self.role = ''
 
     @property
     def new_variable(self):
@@ -31,4 +28,3 @@ class DimacsConverterListener(tptpListener):
             variable_name = self.new_variable
             self.variables[atomic_formula] = variable_name
         print(variable_name, end=' ')
-
