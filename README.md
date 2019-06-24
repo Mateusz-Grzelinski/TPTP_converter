@@ -31,7 +31,3 @@ Do not edit files in `antrl_generated` they are generated auytomatically. There 
 ```sh
 python main.py -h
 ```
-
-## Alternatives
-
-TPTP2X is utility that comes with TPTP package and it is able to convert TPTP to many different formats. Unfortunately is is written is prolog.
