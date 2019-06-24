@@ -16,13 +16,8 @@ def parse_args():
     return parser.parse_args()
 
 
-if __name__ == '__main__':
-    args = parse_args()
-
-    if args.output is not None:
-        sys.stdout = open(args.output, 'w')
-
-    input_stream = FileStream(args.file)
+def convert_tptp_to_dimacs(file_name):
+    input_stream = FileStream(file_name)
     lexer = tptpLexer(input_stream)
     stream = CommonTokenStream(lexer)
     parser = tptpParser(stream)
@@ -31,3 +26,12 @@ if __name__ == '__main__':
     printer = DimacsConverter()
     walker = ParseTreeWalker()
     walker.walk(printer, tree)
+
+
+if __name__ == '__main__':
+    args = parse_args()
+
+    if args.output is not None:
+        sys.stdout = open(args.output, 'w')
+
+    convert_tptp_to_dimacs(args.file)
