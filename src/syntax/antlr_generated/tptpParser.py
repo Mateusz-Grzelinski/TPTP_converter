@@ -829,45 +829,45 @@ class tptpParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'tpi('", "','", "').'", "'thf('", "'tfx('", 
-                     "'tff('", "'tcf('", "'fof('", "'cnf('", "'('", "')'", 
-                     "'['", "']'", "':'", "'$ite('", "'$let('", "'[]'", 
-                     "'{}'", "'{'", "'}'", "'$ite_f('", "'$let_tf('", "'$let_ff('", 
-                     "'$ite_t('", "'$let_ft('", "'$let_tt('", "'inference('", 
-                     "'introduced('", "'file('", "'theory('", "'creator('", 
-                     "'description('", "'iquote('", "'status('", "'assumptions('", 
-                     "'refutation('", "'new_symbols('", "'include('", "'$thf('", 
-                     "'$tff('", "'$fof('", "'$cnf('", "'$fot('", "'|'", 
-                     "'&'", "'<=>'", "'=>'", "'<='", "'<~>'", "'~|'", "'~&'", 
-                     "'~'", "'!!'", "'!>'", "'!='", "'='", "'!'", "'??'", 
-                     "'?*'", "'?'", "'^'", "'@@+'", "'@+'", "'@@-'", "'@-'", 
-                     "'@='", "'@'", "':='", "'>'", "'*'", "'+'", "'<<'", 
+    literalNames = [ "<INVALID>", "'tpi('", "','", "').'", "'thf('", "'tfx('",
+                     "'tff('", "'tcf('", "'fof('", "'cnf('", "'('", "')'",
+                     "'['", "']'", "':'", "'$ite('", "'$let('", "'[]'",
+                     "'{}'", "'{'", "'}'", "'$ite_f('", "'$let_tf('", "'$let_ff('",
+                     "'$ite_t('", "'$let_ft('", "'$let_tt('", "'inference('",
+                     "'introduced('", "'file('", "'theory('", "'creator('",
+                     "'description('", "'iquote('", "'status('", "'assumptions('",
+                     "'refutation('", "'new_symbols('", "'include('", "'$thf('",
+                     "'$tff('", "'$fof('", "'$cnf('", "'$fot('", "'|'",
+                     "'&'", "'<=>'", "'=>'", "'<='", "'<~>'", "'~|'", "'~&'",
+                     "'~'", "'!!'", "'!>'", "'!='", "'='", "'!'", "'??'",
+                     "'?*'", "'?'", "'^'", "'@@+'", "'@+'", "'@@-'", "'@-'",
+                     "'@='", "'@'", "':='", "'>'", "'*'", "'+'", "'<<'",
                      "'-->'" ]
 
-    symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "Or", "And", "Iff", "Impl", "If", "Niff", "Nor", "Nand", 
-                      "Not", "ForallComb", "TyForall", "Infix_inequality", 
-                      "Infix_equality", "Forall", "ExistsComb", "TyExists", 
-                      "Exists", "Lambda", "ChoiceComb", "Choice", "DescriptionComb", 
-                      "Description", "EqComb", "App", "Assignment", "Arrow", 
-                      "Star", "Plus", "Subtype_sign", "Gentzen_arrow", "Real", 
-                      "Signed_real", "Unsigned_real", "Rational", "Signed_rational", 
-                      "Unsigned_rational", "Integer", "Signed_integer", 
-                      "Unsigned_integer", "Decimal", "Positive_decimal", 
-                      "Decimal_exponent", "Decimal_fraction", "Dot_decimal", 
-                      "Exp_integer", "Signed_exp_integer", "Unsigned_exp_integer", 
-                      "Dollar_word", "Dollar_dollar_word", "Upper_word", 
-                      "Lower_word", "Single_quoted", "Distinct_object", 
+    symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>",
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>",
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>",
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>",
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>",
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>",
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>",
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>",
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>",
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>",
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>",
+                      "Or", "And", "Iff", "Impl", "If", "Niff", "Nor", "Nand",
+                      "Not", "ForallComb", "TyForall", "Infix_inequality",
+                      "Infix_equality", "Forall", "ExistsComb", "TyExists",
+                      "Exists", "Lambda", "ChoiceComb", "Choice", "DescriptionComb",
+                      "Description", "EqComb", "App", "Assignment", "Arrow",
+                      "Star", "Plus", "Subtype_sign", "Gentzen_arrow", "Real",
+                      "Signed_real", "Unsigned_real", "Rational", "Signed_rational",
+                      "Unsigned_rational", "Integer", "Signed_integer",
+                      "Unsigned_integer", "Decimal", "Positive_decimal",
+                      "Decimal_exponent", "Decimal_fraction", "Dot_decimal",
+                      "Exp_integer", "Signed_exp_integer", "Unsigned_exp_integer",
+                      "Dollar_word", "Dollar_dollar_word", "Upper_word",
+                      "Lower_word", "Single_quoted", "Distinct_object",
                       "WS", "Line_comment", "Block_comment" ]
 
     RULE_tptp_file = 0
@@ -1072,66 +1072,66 @@ class tptpParser ( Parser ):
     RULE_number = 199
     RULE_file_name = 200
 
-    ruleNames =  [ "tptp_file", "tptp_input", "annotated_formula", "tpi_annotated", 
-                   "tpi_formula", "thf_annotated", "tfx_annotated", "tff_annotated", 
-                   "tcf_annotated", "fof_annotated", "cnf_annotated", "annotations", 
-                   "formula_role", "thf_formula", "thf_logic_formula", "thf_binary_formula", 
-                   "thf_binary_pair", "thf_binary_tuple", "thf_or_formula", 
-                   "thf_and_formula", "thf_apply_formula", "thf_unitary_formula", 
-                   "thf_quantified_formula", "thf_quantification", "thf_variable_list", 
-                   "thf_variable", "thf_typed_variable", "thf_unary_formula", 
-                   "thf_atom", "thf_function", "thf_conn_term", "thf_conditional", 
-                   "thf_let", "thf_arguments", "thf_type_formula", "thf_typeable_formula", 
-                   "thf_subtype", "thf_top_level_type", "thf_unitary_type", 
-                   "thf_apply_type", "thf_binary_type", "thf_mapping_type", 
-                   "thf_xprod_type", "thf_union_type", "thf_sequent", "thf_tuple", 
-                   "thf_formula_list", "tfx_formula", "tfx_logic_formula", 
-                   "tff_formula", "tff_logic_formula", "tff_binary_formula", 
-                   "tff_binary_nonassoc", "tff_binary_assoc", "tff_or_formula", 
-                   "tff_and_formula", "tff_unitary_formula", "tff_quantified_formula", 
-                   "tff_variable_list", "tff_variable", "tff_typed_variable", 
-                   "tff_unary_formula", "tff_atomic_formula", "tff_conditional", 
-                   "tff_let", "tff_let_term_defns", "tff_let_term_list", 
-                   "tff_let_term_defn", "tff_let_term_binding", "tff_let_formula_defns", 
-                   "tff_let_formula_list", "tff_let_formula_defn", "tff_let_formula_binding", 
-                   "tff_sequent", "tff_formula_tuple", "tff_formula_tuple_list", 
-                   "tff_typed_atom", "tff_subtype", "tff_top_level_type", 
-                   "tf1_quantified_type", "tff_monotype", "tff_unitary_type", 
-                   "tff_atomic_type", "tff_type_arguments", "tff_mapping_type", 
-                   "tff_xprod_type", "tcf_formula", "tcf_logic_formula", 
-                   "tcf_quantified_formula", "fof_formula", "fof_logic_formula", 
-                   "fof_binary_formula", "fof_binary_nonassoc", "fof_binary_assoc", 
-                   "fof_or_formula", "fof_and_formula", "fof_unitary_formula", 
-                   "fof_quantified_formula", "fof_variable_list", "fof_unary_formula", 
-                   "fof_infix_unary", "fof_atomic_formula", "fof_plain_atomic_formula", 
-                   "fof_defined_atomic_formula", "fof_defined_plain_formula", 
-                   "fof_defined_infix_formula", "fof_system_atomic_formula", 
-                   "fof_plain_term", "fof_defined_term", "fof_defined_atomic_term", 
-                   "fof_defined_plain_term", "fof_system_term", "fof_arguments", 
-                   "fof_term", "fof_function_term", "tff_conditional_term", 
-                   "tff_let_term", "tff_tuple_term", "fof_sequent", "fof_formula_tuple", 
-                   "fof_formula_tuple_list", "cnf_formula", "cnf_disjunction", 
-                   "cnf_literal", "thf_quantifier", "th0_quantifier", "th1_quantifier", 
-                   "thf_pair_connective", "thf_unary_connective", "th1_unary_connective", 
-                   "tff_pair_connective", "fof_quantifier", "binary_connective", 
-                   "assoc_connective", "unary_connective", "type_constant", 
-                   "type_functor", "defined_type", "system_type", "atom", 
-                   "untyped_atom", "defined_proposition", "defined_predicate", 
-                   "defined_infix_pred", "constant", "functor", "system_constant", 
-                   "system_functor", "defined_constant", "defined_functor", 
-                   "defined_term", "variable", "source", "sources", "dag_source", 
-                   "inference_record", "inference_rule", "inference_parents", 
-                   "parent_list", "parent_info", "parent_details", "internal_source", 
-                   "intro_type", "external_source", "file_source", "file_info", 
-                   "theory", "theory_name", "creator_source", "creator_name", 
-                   "optional_info", "useful_info", "info_items", "info_item", 
-                   "formula_item", "description_item", "iquote_item", "inference_item", 
-                   "inference_status", "status_value", "inference_info", 
-                   "assumptions_record", "refutation", "new_symbol_record", 
-                   "new_symbol_list", "principal_symbol", "include", "formula_selection", 
-                   "name_list", "general_term", "general_data", "general_function", 
-                   "formula_data", "general_list", "general_terms", "name", 
-                   "atomic_word", "atomic_defined_word", "atomic_system_word", 
+    ruleNames =  [ "tptp_file", "tptp_input", "annotated_formula", "tpi_annotated",
+                   "tpi_formula", "thf_annotated", "tfx_annotated", "tff_annotated",
+                   "tcf_annotated", "fof_annotated", "cnf_annotated", "annotations",
+                   "formula_role", "thf_formula", "thf_logic_formula", "thf_binary_formula",
+                   "thf_binary_pair", "thf_binary_tuple", "thf_or_formula",
+                   "thf_and_formula", "thf_apply_formula", "thf_unitary_formula",
+                   "thf_quantified_formula", "thf_quantification", "thf_variable_list",
+                   "thf_variable", "thf_typed_variable", "thf_unary_formula",
+                   "thf_atom", "thf_function", "thf_conn_term", "thf_conditional",
+                   "thf_let", "thf_arguments", "thf_type_formula", "thf_typeable_formula",
+                   "thf_subtype", "thf_top_level_type", "thf_unitary_type",
+                   "thf_apply_type", "thf_binary_type", "thf_mapping_type",
+                   "thf_xprod_type", "thf_union_type", "thf_sequent", "thf_tuple",
+                   "thf_formula_list", "tfx_formula", "tfx_logic_formula",
+                   "tff_formula", "tff_logic_formula", "tff_binary_formula",
+                   "tff_binary_nonassoc", "tff_binary_assoc", "tff_or_formula",
+                   "tff_and_formula", "tff_unitary_formula", "tff_quantified_formula",
+                   "tff_variable_list", "tff_variable", "tff_typed_variable",
+                   "tff_unary_formula", "tff_atomic_formula", "tff_conditional",
+                   "tff_let", "tff_let_term_defns", "tff_let_term_list",
+                   "tff_let_term_defn", "tff_let_term_binding", "tff_let_formula_defns",
+                   "tff_let_formula_list", "tff_let_formula_defn", "tff_let_formula_binding",
+                   "tff_sequent", "tff_formula_tuple", "tff_formula_tuple_list",
+                   "tff_typed_atom", "tff_subtype", "tff_top_level_type",
+                   "tf1_quantified_type", "tff_monotype", "tff_unitary_type",
+                   "tff_atomic_type", "tff_type_arguments", "tff_mapping_type",
+                   "tff_xprod_type", "tcf_formula", "tcf_logic_formula",
+                   "tcf_quantified_formula", "fof_formula", "fof_logic_formula",
+                   "fof_binary_formula", "fof_binary_nonassoc", "fof_binary_assoc",
+                   "fof_or_formula", "fof_and_formula", "fof_unitary_formula",
+                   "fof_quantified_formula", "fof_variable_list", "fof_unary_formula",
+                   "fof_infix_unary", "fof_atomic_formula", "fof_plain_atomic_formula",
+                   "fof_defined_atomic_formula", "fof_defined_plain_formula",
+                   "fof_defined_infix_formula", "fof_system_atomic_formula",
+                   "fof_plain_term", "fof_defined_term", "fof_defined_atomic_term",
+                   "fof_defined_plain_term", "fof_system_term", "fof_arguments",
+                   "fof_term", "fof_function_term", "tff_conditional_term",
+                   "tff_let_term", "tff_tuple_term", "fof_sequent", "fof_formula_tuple",
+                   "fof_formula_tuple_list", "cnf_formula", "cnf_disjunction",
+                   "cnf_literal", "thf_quantifier", "th0_quantifier", "th1_quantifier",
+                   "thf_pair_connective", "thf_unary_connective", "th1_unary_connective",
+                   "tff_pair_connective", "fof_quantifier", "binary_connective",
+                   "assoc_connective", "unary_connective", "type_constant",
+                   "type_functor", "defined_type", "system_type", "atom",
+                   "untyped_atom", "defined_proposition", "defined_predicate",
+                   "defined_infix_pred", "constant", "functor", "system_constant",
+                   "system_functor", "defined_constant", "defined_functor",
+                   "defined_term", "variable", "source", "sources", "dag_source",
+                   "inference_record", "inference_rule", "inference_parents",
+                   "parent_list", "parent_info", "parent_details", "internal_source",
+                   "intro_type", "external_source", "file_source", "file_info",
+                   "theory", "theory_name", "creator_source", "creator_name",
+                   "optional_info", "useful_info", "info_items", "info_item",
+                   "formula_item", "description_item", "iquote_item", "inference_item",
+                   "inference_status", "status_value", "inference_info",
+                   "assumptions_record", "refutation", "new_symbol_record",
+                   "new_symbol_list", "principal_symbol", "include", "formula_selection",
+                   "name_list", "general_term", "general_data", "general_function",
+                   "formula_data", "general_list", "general_terms", "name",
+                   "atomic_word", "atomic_defined_word", "atomic_system_word",
                    "number", "file_name" ]
 
     EOF = Token.EOF
@@ -2489,7 +2489,7 @@ class tptpParser ( Parser ):
                     self.state = 539
                     self.match(tptpParser.Or)
                     self.state = 540
-                    self.thf_unitary_formula() 
+                    self.thf_unitary_formula()
                 self.state = 545
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,15,self._ctx)
@@ -2568,7 +2568,7 @@ class tptpParser ( Parser ):
                     self.state = 552
                     self.match(tptpParser.And)
                     self.state = 553
-                    self.thf_unitary_formula() 
+                    self.thf_unitary_formula()
                 self.state = 558
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,16,self._ctx)
@@ -2647,7 +2647,7 @@ class tptpParser ( Parser ):
                     self.state = 565
                     self.match(tptpParser.App)
                     self.state = 566
-                    self.thf_unitary_formula() 
+                    self.thf_unitary_formula()
                 self.state = 571
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,17,self._ctx)
@@ -3977,7 +3977,7 @@ class tptpParser ( Parser ):
                     self.state = 704
                     self.match(tptpParser.Star)
                     self.state = 705
-                    self.thf_unitary_type() 
+                    self.thf_unitary_type()
                 self.state = 710
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,28,self._ctx)
@@ -4056,7 +4056,7 @@ class tptpParser ( Parser ):
                     self.state = 717
                     self.match(tptpParser.Plus)
                     self.state = 718
-                    self.thf_unitary_type() 
+                    self.thf_unitary_type()
                 self.state = 723
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,29,self._ctx)
@@ -4729,7 +4729,7 @@ class tptpParser ( Parser ):
                     self.state = 788
                     self.match(tptpParser.Or)
                     self.state = 789
-                    self.tff_unitary_formula() 
+                    self.tff_unitary_formula()
                 self.state = 794
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,38,self._ctx)
@@ -4808,7 +4808,7 @@ class tptpParser ( Parser ):
                     self.state = 801
                     self.match(tptpParser.And)
                     self.state = 802
-                    self.tff_unitary_formula() 
+                    self.tff_unitary_formula()
                 self.state = 807
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,39,self._ctx)
@@ -6727,7 +6727,7 @@ class tptpParser ( Parser ):
                     self.state = 1039
                     self.match(tptpParser.Star)
                     self.state = 1040
-                    self.tff_atomic_type() 
+                    self.tff_atomic_type()
                 self.state = 1045
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,62,self._ctx)
@@ -7256,7 +7256,7 @@ class tptpParser ( Parser ):
                     self.state = 1087
                     self.match(tptpParser.Or)
                     self.state = 1088
-                    self.fof_unitary_formula() 
+                    self.fof_unitary_formula()
                 self.state = 1093
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,69,self._ctx)
@@ -7335,7 +7335,7 @@ class tptpParser ( Parser ):
                     self.state = 1100
                     self.match(tptpParser.And)
                     self.state = 1101
-                    self.fof_unitary_formula() 
+                    self.fof_unitary_formula()
                 self.state = 1106
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,70,self._ctx)
@@ -8948,7 +8948,7 @@ class tptpParser ( Parser ):
                     self.state = 1275
                     self.match(tptpParser.Or)
                     self.state = 1276
-                    self.cnf_literal() 
+                    self.cnf_literal()
                 self.state = 1281
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,89,self._ctx)
@@ -13091,58 +13091,53 @@ class tptpParser ( Parser ):
     def thf_or_formula_sempred(self, localctx:Thf_or_formulaContext, predIndex:int):
             if predIndex == 0:
                 return self.precpred(self._ctx, 1)
-         
+
 
     def thf_and_formula_sempred(self, localctx:Thf_and_formulaContext, predIndex:int):
             if predIndex == 1:
                 return self.precpred(self._ctx, 1)
-         
+
 
     def thf_apply_formula_sempred(self, localctx:Thf_apply_formulaContext, predIndex:int):
             if predIndex == 2:
                 return self.precpred(self._ctx, 1)
-         
+
 
     def thf_xprod_type_sempred(self, localctx:Thf_xprod_typeContext, predIndex:int):
             if predIndex == 3:
                 return self.precpred(self._ctx, 1)
-         
+
 
     def thf_union_type_sempred(self, localctx:Thf_union_typeContext, predIndex:int):
             if predIndex == 4:
                 return self.precpred(self._ctx, 1)
-         
+
 
     def tff_or_formula_sempred(self, localctx:Tff_or_formulaContext, predIndex:int):
             if predIndex == 5:
                 return self.precpred(self._ctx, 1)
-         
+
 
     def tff_and_formula_sempred(self, localctx:Tff_and_formulaContext, predIndex:int):
             if predIndex == 6:
                 return self.precpred(self._ctx, 1)
-         
+
 
     def tff_xprod_type_sempred(self, localctx:Tff_xprod_typeContext, predIndex:int):
             if predIndex == 7:
                 return self.precpred(self._ctx, 1)
-         
+
 
     def fof_or_formula_sempred(self, localctx:Fof_or_formulaContext, predIndex:int):
             if predIndex == 8:
                 return self.precpred(self._ctx, 1)
-         
+
 
     def fof_and_formula_sempred(self, localctx:Fof_and_formulaContext, predIndex:int):
             if predIndex == 9:
                 return self.precpred(self._ctx, 1)
-         
+
 
     def cnf_disjunction_sempred(self, localctx:Cnf_disjunctionContext, predIndex:int):
             if predIndex == 10:
                 return self.precpred(self._ctx, 1)
-         
-
-
-
-
