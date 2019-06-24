@@ -11,7 +11,6 @@ TPTP BNF: http://www.tptp.org/TPTP/SyntaxBNF.html
 
 TPTP detail description (technical document): http://www.tptp.org/TPTP/TR/TPTPTR.shtml
 
-I haven't found any tutorial for TPTP syntax.
 
 Dimacs syntax: http://www.domagoj-babic.com/uploads/ResearchProjects/Spear/dimacs-cnf.pdf
 
