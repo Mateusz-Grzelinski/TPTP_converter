@@ -9,8 +9,6 @@ This project converts TPTP syntax to dimacs when it is possible
 
 TPTP BNF: http://www.tptp.org/TPTP/SyntaxBNF.html
 
-TPTP quick start (not very useful): http://www.tptp.org/TPTP/QuickGuide/
-
 TPTP detail description (technical document): http://www.tptp.org/TPTP/TR/TPTPTR.shtml
 
 I haven't found any tutorial for TPTP syntax.
