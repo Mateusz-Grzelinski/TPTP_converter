@@ -7,14 +7,17 @@ from src.antlr_generated.tptpParser import tptpParser, ParseTreeWalker, FileStre
 
 
 class DimacsConverter(tptpListener):
-    def __init__(self):
+    def __init__(self, file_name):
         self.variables = {}
         self.number_of_variables = 0
         self.number_of_clauses = 0
         self.delimiter = 0
-        self.file_name = 'out_dimacs.txt'
+        self.file_name = file_name
         with open(self.file_name, "w+") as f:
             f.write('p\n')
+
+    def exitTptp_file(self, ctx: tptpParser.Tptp_fileContext):
+        print(f'converted file saved to {self.file_name}')
 
     @property
     def new_variable(self):
@@ -23,7 +26,7 @@ class DimacsConverter(tptpListener):
 
     def exitCnf_annotated(self, ctx: tptpParser.Cnf_annotatedContext):
         self.number_of_clauses += 1
-        print('0')
+        # print('0')
         with open(self.file_name, 'a') as f:
             f.write('0\n')
         with open(self.file_name, 'r+') as m:
@@ -34,7 +37,7 @@ class DimacsConverter(tptpListener):
 
     def enterCnf_literal(self, ctx: tptpParser.Cnf_literalContext):
         if ctx.getToken(tptpParser.Not, 0):
-            print('-', end='')
+            # print('-', end='')
             with open(self.file_name, 'a') as f:
                 f.write('-')
 
@@ -44,7 +47,7 @@ class DimacsConverter(tptpListener):
         if variable_name is None:
             variable_name = self.new_variable
             self.variables[atomic_formula] = variable_name
-        print(variable_name, end=' ')
+        # print(variable_name, end=' ')
         with open(self.file_name, 'a') as f:
             f.write(str(variable_name) + ' ')
 

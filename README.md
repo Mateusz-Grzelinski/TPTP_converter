@@ -24,10 +24,18 @@ Python 3.6 or higher required.
 pip install -r requirements.txt
 ```
 
-Do not edit files in `antrl_generated` they are generated auytomatically. There is also defined grammar for dimacs but it was not used.
+Do not edit files in `antrl_generated` they are generated automatically. There is also defined grammar for dimacs but it was not used.
 
 ## Usage
 
-```sh
+```bash
 python main.py -h
 ```
+
+Example command (converted file will be saved to out.dimacs)
+
+```bash
+python main.py -f examples/cnf/dimacs-convertable/roles000.p
+```
+
+
