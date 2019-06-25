@@ -36,7 +36,7 @@ class TestDimacsConverter(TestCase):
             parser = tptpParser(stream)
             tree = parser.tptp_file()
 
-            printer = DimacsConverter()
+            printer = DimacsConverter(self.output_file)
 
             self.assertEqual(0, printer.number_of_variables)
 
@@ -55,7 +55,7 @@ class TestDimacsConverter(TestCase):
             parser = tptpParser(stream)
             tree = parser.tptp_file()
 
-            printer = DimacsConverter()
+            printer = DimacsConverter(self.output_file)
 
             self.assertEqual(0, printer.number_of_clauses)
 
@@ -67,7 +67,7 @@ class TestDimacsConverter(TestCase):
     def test_example_conversion(self):
         expected = 'p cnf 43 26\n1 -2 0\n1 -3 0\n1 -4 0\n1 -5 0\n1 -6 0\n7 0\n8 0\n9 0\n10 0\n11 0\n12 0\n13 -14 0\n15 16 -17 -18 -19 -20 -21 -22 0\n23 -24 -25 0\n26 -27 -25 0\n28 -25 -29 0\n30 -29 -31 0\n-31 -29 -32 0\n-31 -33 -34 0\n35 -25 -24 0\n-25 -27 -36 0\n37 -24 0\n38 -24 0\n39 -27 0\n40 -27 0\n-17 -41 -33 -42 -43 0\n'
 
-        convert_tptp_to_dimacs(self.example_tptp_file1)
+        convert_tptp_to_dimacs(self.example_tptp_file1, self.output_file)
 
         with open(self.output_file, 'r+') as file:
             output = file.readlines()
@@ -76,7 +76,7 @@ class TestDimacsConverter(TestCase):
 
     def test_example_conversion1(self):
         expected = 'p cnf 3 2\n1 2 0\n3 0\n'
-        convert_tptp_to_dimacs(self.example_tptp_file7)
+        convert_tptp_to_dimacs(self.example_tptp_file7, self.output_file)
 
         with open(self.output_file, 'r+') as file:
             output = file.readlines()

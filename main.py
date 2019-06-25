@@ -17,14 +17,14 @@ def parse_args():
     return parser.parse_args()
 
 
-def convert_tptp_to_dimacs(file_name: str):
+def convert_tptp_to_dimacs(file_name: str, output):
     input_stream = FileStream(file_name)
     lexer = tptpLexer(input_stream)
     stream = CommonTokenStream(lexer)
     parser = tptpParser(stream)
     tree = parser.tptp_file()
 
-    printer = DimacsConverter(args.output)
+    printer = DimacsConverter(output)
     walker = ParseTreeWalker()
     walker.walk(printer, tree)
 
@@ -32,4 +32,4 @@ def convert_tptp_to_dimacs(file_name: str):
 if __name__ == '__main__':
     args = parse_args()
 
-    convert_tptp_to_dimacs(args.file)
+    convert_tptp_to_dimacs(args.file, args.output)
