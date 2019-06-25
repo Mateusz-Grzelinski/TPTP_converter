@@ -26,6 +26,12 @@ pip install -r requirements.txt
 
 Do not edit files in `antrl_generated` they are generated automatically. There is also defined grammar for dimacs but it was not used.
 
+To generate grammar use command:
+
+```bash
+antlr4 -Dlanguage=Python3 -o antlr_generated tptp.g4 dimacs.g4
+```
+
 ## Usage
 
 ```bash
